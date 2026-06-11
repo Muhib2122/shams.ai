@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -12,19 +11,87 @@ content="width=device-width,initial-scale=1.0">
 
 <title>
 
-SHAMS AI Chat
+SHAMS AI
 
 </title>
+
+<link
+rel="stylesheet"
+href="./css/chat.css">
 
 </head>
 
 <body>
 
-<h1>
+<div class="sidebar">
 
-SHAMS AI Chat
+<h2>
 
-</h1>
+SHAMS AI
+
+</h2>
+
+<button id="newChatBtn">
+
++ New Chat
+
+</button>
+
+<input
+type="text"
+placeholder="Search Chats"
+id="searchInput">
+
+<div id="historyList">
+
+</div>
+
+</div>
+
+
+
+<div class="main">
+
+<div
+id="chatBox">
+
+</div>
+
+<div class="bottom">
+
+<button id="attachBtn">
+
+📎
+
+</button>
+
+<input
+type="text"
+id="messageInput"
+placeholder="Ask anything">
+
+<button id="sendBtn">
+
+➤
+
+</button>
+
+</div>
+
+</div>
+
+
+<script src="./js/chat.js"></script>
+
+<script src="./js/sidebar.js"></script>
+
+<script src="./js/history.js"></script>
+
+<script src="./js/search.js"></script>
+
+<script src="./js/typing.js"></script>
+
+<script src="./js/stream.js"></script>
 
 </body>
 
